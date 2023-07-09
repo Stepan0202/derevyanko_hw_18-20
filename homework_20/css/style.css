@@ -1,0 +1,39 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    text-align: center;
+}
+.main {
+    padding: 20px;
+}
+.slider {
+    display: flex;
+    align-items: center;
+    margin-left: 50%;
+    transform: translateX(-25%);
+}
+.slider__arrowContainer{
+    min-width: 4.25em;
+}
+.slider__prev, .slider__next {
+    font-size: 100px;
+    font-weight: 600;
+}
+.slider__prev:hover, .slider__next:hover {
+    cursor: pointer;
+}
+.slider__main {
+    display: flex;
+    max-width: 200px;
+    overflow: hidden;
+}
+.slider__container{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.slider__item {
+    font-size: 150px;;
+}
+.slider__next {
+}
