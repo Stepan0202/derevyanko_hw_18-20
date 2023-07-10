@@ -1,3 +1,4 @@
+'use strict'
 const sliderItems = document.querySelectorAll('.slider__item');
 const itemWidth = sliderItems[0].clientWidth;
 console.dir(sliderItems[0]);
@@ -10,6 +11,7 @@ let currentPosition = 0;
 toLeft.dataset.direction = 'left';
 toLeft.addEventListener('click', move);
 toRight.dataset.direction = 'right';
+toRight.style.display = 'none';
 toRight.addEventListener('click', move);
 
 function move(event){
